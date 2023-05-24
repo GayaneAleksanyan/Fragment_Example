@@ -6,16 +6,23 @@
     android:background="@android:color/holo_orange_dark"
     tools:context=".ExampleFragment">
 
-    <ScrollView
+    <TextView
+        android:id="@+id/tv_android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/long_text"
             android:textColor="@color/white"
-            android:textSize="@dimen/_25sp"
-            android:text="@string/long_text" />
-
+            android:textSize="@dimen/_25sp" />
     </ScrollView>
+
 </FrameLayout>

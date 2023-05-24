@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".SecondFragment">
+
+    <ImageView
+        android:id="@+id/transition_1"
+        android:layout_width="@dimen/_150dp"
+        android:layout_height="@dimen/_150dp"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="@dimen/_16dp"
+        android:contentDescription="@string/default_image"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/tv_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:layout_marginEnd="@dimen/_32dp"
+        android:text="@string/android"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_50sp"
+        android:transitionName="@string/tv_android" />
+
+</FrameLayout>

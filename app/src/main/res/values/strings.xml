@@ -10,5 +10,17 @@
     long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,
     long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,
     long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,
+    long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,
+    long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,
+    long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,
+    long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,
+    long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,
+    long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,
     long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,long_text,</string>
+    <string name="default_image">default image</string>
+    <string name="transition_1">transition_1</string>
+    <string name="android">Android</string>
+    <string name="image_button_small">image_button_small</string>
+    <string name="scroll_view">scroll_view</string>
+    <string name="tv_android">tv_android</string>
 </resources>
