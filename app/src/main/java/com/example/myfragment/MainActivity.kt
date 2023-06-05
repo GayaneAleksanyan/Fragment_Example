@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentTransaction
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,4 +35,29 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.fragment_container, ExampleFragment())
             .commit()
     }
+
+    fun startHelloFragment(imageButton: ImageView) {
+        supportFragmentManager
+            .beginTransaction()
+            .addSharedElement(imageButton, "transition_1")
+            .addToBackStack(null)
+            .replace(R.id.fragment_container, HelloFragment())
+            .commit()
+    }
+
+    fun passData(editText: String) {
+        val bundle = Bundle()
+        bundle.putString("input", editText)
+
+        val textFromHelloFragment = TextFromHelloFragment()
+        textFromHelloFragment.arguments = bundle
+
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_container, textFromHelloFragment)
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+            .addToBackStack(null)
+            .commit()
+    }
+
 }

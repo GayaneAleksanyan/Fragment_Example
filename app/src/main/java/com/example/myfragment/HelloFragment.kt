@@ -2,15 +2,14 @@ package com.example.myfragment
 
 import android.os.Bundle
 import android.transition.TransitionInflater
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragment_second.transition_1
-import kotlinx.android.synthetic.main.fragment_second.tv_android
+import kotlinx.android.synthetic.main.fragment_hello.button_send
+import kotlinx.android.synthetic.main.fragment_hello.edit_text
 
-class SecondFragment : Fragment() {
-
+class HelloFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -22,18 +21,14 @@ class SecondFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_second, container, false)
+        return inflater.inflate(R.layout.fragment_hello, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        tv_android.setOnClickListener {
-            (activity as MainActivity).startExampleFragment(tv_android)
-        }
-
-        transition_1.setOnClickListener {
-            (activity as MainActivity).startHelloFragment(transition_1)
+        button_send.setOnClickListener {
+            (activity as MainActivity).passData(edit_text.text.toString())
         }
     }
 }

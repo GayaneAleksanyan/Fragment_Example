@@ -13,7 +13,8 @@
         android:layout_gravity="center|start"
         android:layout_marginStart="@dimen/_16dp"
         android:contentDescription="@string/default_image"
-        android:src="@drawable/ic_launcher_foreground" />
+        android:src="@drawable/ic_launcher_foreground"
+        android:transitionName="@string/transition_1" />
 
     <TextView
         android:id="@+id/tv_android"
